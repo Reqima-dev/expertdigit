@@ -1,0 +1,186 @@
+.formationContainer {
+  margin: 9rem 2rem 0 2rem;
+}
+
+.formationContainer .head {
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.formationContainer .head h1 {
+  font-size: 60px;
+  position: relative;
+}
+.formationContainer .head h1::before {
+  position: absolute;
+  content: "";
+  width: 245px;
+  height: 91px;
+  background-color: #e9d175;
+  border-radius: 70px;
+  z-index: -1;
+  left: -14px;
+}
+
+.formationContainer .head h1 img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -25px;
+  left: -32px;
+}
+
+.formationContainer .head p {
+  font-family: var(--font-family-two);
+  font-size: 17px;
+  letter-spacing: 1px;
+  color: #666666;
+  padding-top: 10px;
+}
+
+.formatGratuites {
+  text-align: left;
+  margin-top: 25px;
+
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.formatGratuites .formaItems {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 630px;
+  height: 100%;
+  background: white;
+  padding: 18px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px #7a7a7a1a;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.formatGratuites .formaItems:hover {
+  box-shadow: none;
+  background: #f3f3f3;
+}
+
+.formatGratuites .formaItems > div {
+  display: flex;
+  justify-content: space-between;
+  color: #666666;
+}
+
+.formatGratuites .formaItems h2 {
+  font-family: var(--font-family-two);
+  color: #666666;
+  padding-bottom: 7px;
+  text-transform: capitalize;
+  border-bottom: 1px solid #666666;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1115px) {
+  .formatGratuites .formaItems {
+    width: 800px;
+  }
+
+  .formatGratuites .formaItems iframe {
+    width: 750px !important;
+    height: 400px !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .formationContainer .head h1::before {
+    left: 171px;
+  }
+  .formationContainer .head h1 img {
+    left: 141px;
+  }
+
+  .formatGratuites .formaItems {
+    width: 700px;
+  }
+
+  .formatGratuites .formaItems iframe {
+    width: 650px !important;
+    height: 300px !important;
+  }
+}
+
+@media screen and (max-width: 758px) {
+  .formationContainer .head h1 {
+    font-size: 50px;
+  }
+  .formationContainer .head h1::before {
+    left: 108px;
+  }
+  .formationContainer .head h1 img {
+    left: 81px;
+  }
+
+  .formatGratuites .formaItems {
+    width: 600px;
+  }
+
+  .formatGratuites .formaItems iframe {
+    width: 550px !important;
+    height: 250px !important;
+  }
+}
+@media screen and (max-width: 665px) {
+  .formationContainer .head h1 {
+    font-size: 50px;
+    line-height: 1.2;
+  }
+  .formationContainer .head h1::before {
+    height: 60px;
+  }
+  .formationContainer .head h1 img {
+    left: 81px;
+  }
+
+  .formatGratuites .formaItems {
+    width: 100%;
+  }
+
+  .formatGratuites .formaItems iframe {
+    width: initial !important;
+    height: 250px !important;
+  }
+}
+
+@media screen and (max-width: 517px) {
+  .formatGratuites .formaItems h2 {
+    font-size: 15px;
+  }
+
+  .formatGratuites .formaItems > div {
+    gap: 15px;
+  }
+
+  .formationContainer .head h1 {
+    font-size: 38px;
+  }
+  .formationContainer .head h1::before {
+    left: 63px;
+    height: 50px;
+  }
+
+  .formationContainer .head h1 img {
+    display: none;
+  }
+}

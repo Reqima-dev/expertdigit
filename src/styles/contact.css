@@ -1,0 +1,322 @@
+.contactContainer {
+  margin: 8rem 0 0 0;
+  /* max-width: min-content; */
+}
+
+.contactContainer .contactHead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+.contactContainer .contactHead .left {
+  width: 600px;
+}
+
+.contactContainer .contactHead .right {
+  width: 300px;
+  height: 300px;
+}
+
+.contactContainer .contactHead .right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contactHead .left span {
+  color: #2cbca5;
+  font-family: var(--font-family-two);
+  font-weight: 450;
+  position: relative;
+}
+
+.contactHead .left span::before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 3px;
+  background-color: black;
+  bottom: -8px;
+  left: 10px;
+}
+
+.contactHead .left h1 {
+  text-align: left;
+  color: #0f110f;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.1em;
+  letter-spacing: -0.3px;
+  font-family: var(--font-family-two);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.contactHead .left p {
+  font-family: var(--font-family-two);
+  font-weight: 300;
+  color: #666666;
+}
+
+.contactSub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding: 25px 45px;
+  flex-direction: column;
+  border-top: 1px solid #66666654;
+  width: 100%;
+}
+
+.contactSub .subHead h1 {
+  text-align: center;
+  color: #0f110f;
+  font-family: var(--font-family-two);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.1em;
+  letter-spacing: -0.3px;
+  padding-bottom: 15px;
+}
+
+.contactSub .subHead p {
+  color: #666666;
+  font-size: 15px;
+}
+
+.formCOntainer {
+  padding-top: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.formCOntainer .formImg {
+  width: 450px;
+  height: 620px;
+}
+
+.formCOntainer .formImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 3px 5px 0 rgb(0 1 1 / 10%);
+}
+
+.formCOntainer form {
+  width: 450px;
+  height: 100%;
+  background: #fff;
+  box-shadow: 0 3px 5px 0 rgb(0 1 1 / 10%);
+  border-radius: 20px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.formCOntainer form p {
+  color: #1a1a1a;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: none;
+  line-height: 1.25em;
+  letter-spacing: 0px;
+  padding-bottom: 20px;
+}
+
+.formCOntainer form .form_Name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 25px;
+}
+
+.formCOntainer form .form_Name label {
+  font-family: var(--font-family-two);
+  font-size: 15px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.formCOntainer form .form_Name input,
+.formCOntainer form .form_Name textarea {
+  width: 400px;
+  height: 45px;
+  outline: none;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #666666;
+  transition: all 0.4s ease-in-out;
+}
+
+.formCOntainer form .form_Name input:focus,
+.formCOntainer form .form_Name textarea:focus {
+  border: 1px solid #34b3f7;
+}
+
+.formCOntainer form .form_Name textarea {
+  height: 190px !important;
+  resize: none;
+}
+
+.formCOntainer form button {
+  background-color: #0f110f;
+  color: #fff;
+  padding: 15px 45px;
+  cursor: pointer;
+  font-size: 15px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  border: 1px solid #0f110f;
+  transition: all 0.4s ease-in-out;
+}
+
+.formCOntainer form button:hover {
+  border-radius: none;
+  background: none;
+  color: #0f110f;
+}
+
+.faq {
+  padding-top: 50px;
+}
+
+.faq .faqHead {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 25px;
+}
+
+.faq .faqHead h1 {
+  text-align: left;
+  color: #0f110f;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 1.1em;
+  letter-spacing: -0.3px;
+  padding-bottom: 15px;
+}
+
+.faq .faqHead article {
+  font-family: var(--font-family-two);
+  color: #666666;
+  line-height: 1.9rem;
+  font-size: 18px;
+  text-align: left;
+  width: 850px;
+}
+
+.faqContainer {
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+@media screen and (max-width: 1115px) {
+  .contactContainer .contactHead .right {
+    display: none;
+  }
+  .contactContainer .contactHead {
+    padding: 25px;
+  }
+  .contactContainer .contactHead .left {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contactHead .left h1,
+  .faq .faqHead h1,
+  .faq .faqHead article {
+    text-align: center;
+  }
+  .contactHead .left p {
+    height: 100%;
+    width: 800px;
+    text-align: center;
+  }
+
+  .faq .faqHead {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contactSub {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .formCOntainer .formImg {
+    display: none;
+  }
+
+  .formCOntainer form {
+    width: 100%;
+  }
+  .formCOntainer form .form_Name input,
+  .formCOntainer form .form_Name textarea,
+  .contactHead .left p {
+    width: 100%;
+  }
+
+  .faqContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .formCOntainer form .form_Name {
+    width: 100%;
+    height: 100%;
+  }
+
+  .faq .faqHead article {
+    width: 100%;
+  }
+  .faq .faqHead h1 {
+    font-size: 30px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 666px) {
+  .contactHead .left h1 {
+    font-size: 30px;
+  }
+  .contactSub .subHead h1 {
+    font-size: 35px;
+  }
+
+  .faqContainer,
+  .formCOntainer {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .faq .faqHead h1 {
+    font-size: 25px;
+  }
+  .faq .faqHead article {
+    font-size: 15px;
+    line-height: normal;
+  }
+
+  
+}

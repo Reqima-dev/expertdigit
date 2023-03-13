@@ -1,0 +1,128 @@
+.testiContainer {
+  max-width: 1230px;
+  width: 100%;
+}
+
+.testiContainer .head {
+  text-align: center;
+  padding: 15px 0;
+}
+.testiContainer .head h1 {
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.testiContainer .head span {
+  font-family: var(--font-family-two);
+  font-size: 15px;
+  color: #666666;
+}
+
+.testiComponent {
+  height: 100%;
+  padding: 30px 70px;
+}
+
+.testiComponent .testiItmes {
+  width: 300px !important;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: white;
+  border-radius: 25px;
+}
+
+.testiComponent .testiItmes .testAvatar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #1995e88e;
+  padding: 15px 0;
+  border-radius: 25px 25px 0px 25px;
+  position: relative;
+}
+.testiComponent .testiItmes .testAvatar::before,
+.testiComponent .testiItmes .testAvatar::after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: #1995e88e;
+  bottom: -40px;
+  right: 0;
+  z-index: 1;
+}
+.testiComponent .testiItmes .testAvatar::after {
+  background-color: #fff;
+  border-radius: 0 25px 0 0;
+}
+
+.testiItmes .testAvatar img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px white solid;
+}
+
+.testiItmes .infoTesti {
+  background: white;
+  padding: 15px 4px;
+  position: relative;
+  box-shadow: 0 5px 15px #7a7a7a1a;
+}
+
+.testiItmes .testAvatar h4 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: black;
+}
+
+.testiItmes .testAvatar .infoAvatar .star {
+  padding-top: 10px;
+}
+.testiItmes .testAvatar .infoAvatar .star i {
+  padding-right: 5px;
+  color: #fff;
+}
+.testiItmes .testAvatar span {
+  font-style: italic;
+  font-size: 15px;
+  font-family: var(--font-family-two);
+}
+
+.testiItmes .infoTesti p {
+  padding-top: 10px;
+  font-family: var(--font-family-two);
+  color: #666666;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.slick-track {
+  display: flex;
+  gap: 25px !important;
+}
+
+@media screen and (max-width: 889px) {
+  .testiComponent {
+    height: 100%;
+    padding: 30px 14px;
+  }
+
+   .testiContainer .head h1 {
+    font-size: 30px;
+  }
+
+  .testiContainer .head span{
+    font-size: 13px;
+    width: 264px;
+    line-height: 1.8;
+    display: inline-block;
+  }
+}
