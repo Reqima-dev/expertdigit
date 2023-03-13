@@ -15,13 +15,12 @@ const BlogDetails = () => {
   // lien url de la page 👇🏾
   const urlLocation = window.location.href;
   const encodedUrl = encodeURI(urlLocation);
- 
 
   // Message à envoyer 👇🏾
   const message = `Cet article 👉🏾 ${blog.title}. Prenez 5 minutes pour le lire `;
 
   //LinkdIn APi 👇🏾
-  const linkedinApi = `https://www.linkedin.com/share?url=${encodedUrl}`;
+  const linkedinApi = `https://www.linkedin.com/shareArticle?url=${encodedUrl}&title=${blog.title}`;
 
   // facebook api 👇🏾
   const facebookAPi = `https://www.facebook.com/sharer.php?u=${encodedUrl}`;
